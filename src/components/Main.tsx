@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Box, Container } from "@chakra-ui/react";
 
 import { nextFont } from "@/lib/theme";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 export default function Main({ children }: React.PropsWithChildren) {
@@ -17,6 +18,8 @@ export default function Main({ children }: React.PropsWithChildren) {
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
+
+      <Navbar />
 
       <Container maxW="container.md" pt={20}>
         {children}
