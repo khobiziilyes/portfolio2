@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Box, Container } from "@chakra-ui/react";
 
 import { nextFont } from "@/lib/theme";
+import Footer from "./Footer";
 
 export default function Main({ children }: React.PropsWithChildren) {
   return (
@@ -19,6 +20,7 @@ export default function Main({ children }: React.PropsWithChildren) {
 
       <Container maxW="container.md" pt={20}>
         {children}
+        <Footer />
       </Container>
     </Box>
   );
