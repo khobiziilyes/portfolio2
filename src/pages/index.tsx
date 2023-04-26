@@ -20,10 +20,6 @@ import Section from "@/components/Section";
 import AppLink from "@/components/AppLink";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
-});
-
 const Home = () => (
   <Layout>
     <Container maxWidth="container.md">
@@ -177,11 +173,7 @@ I look forward to collaborate with you to create something exceptional!
         </List>
 
         <Box my={4} textAlign="center">
-          <AppLink
-            href="https://drive.google.com/file/d/1f8wTm2_UAicf9EZ5vJ4tMVEmUMLiXR2k/view?usp=sharing"
-            passHref
-            scroll={false}
-          >
+          <AppLink href="/" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Download Resume
             </Button>
